@@ -1,0 +1,28 @@
+{
+    "name": "datetimeinfo",
+    "type": "flogo:function",
+    "version": "0.10.0",
+    "title": "datetimeInfo Function",
+    "description": "datetimeInfo Function",
+    "functions": [
+        {
+            "name": "dateTimeInfo",
+            "description": "Returns the current date with UTC time zone.",
+            "example": "datetimeinfo.dateTimeInfo(\"02/08/2017\", \"day\") => 2",
+            "args": [
+                {
+                    "name": "date",
+                    "type": "string"
+                },
+                {
+                    "name": "operation",
+                    "type": "string",
+                    "allowed":["day","hour","second","minute","nanosecond"]
+                }
+            ],
+            "return": {
+                "type": "int"
+            }
+        }
+    ]
+}
